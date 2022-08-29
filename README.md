@@ -7,7 +7,7 @@ The Resnet50 model is trained with imagenet dataset (weights downloaded automati
 
 The architecture of the project consists of three different services, each of them in a different docker container: **ML Service** where Resnet50 model is based, **API** where the API service is based and finally **REDIS** to conect the previous services. 
 
-![Project Architecture](/car_detection/tests/Project_arch.png)
+![Project Architecture](/tests/Project_arch.png)
 
 ## Run the project
 
@@ -23,9 +23,9 @@ There are two ways to run the application, as follow:
 
 This endpoint (root) takes an image and return the object class and the confidence score.
 
-![Front-End](/car_detection/tests/Front-End-1.png)
+![Front-End](/tests/Front-End-1.png)
 
-![Front-End](/car_detection/tests/Front-End-2.png)
+![Front-End](/tests/Front-End-2.png)
 
 ### Integration-type endpoint
 
