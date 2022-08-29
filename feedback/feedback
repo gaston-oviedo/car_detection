@@ -1,0 +1,7 @@
+{'filename': 'befad1a2012ccd946459dc3d9a129c6e.jpeg', 'prediction': 'golden_retriever', 'score': 0.5846 }{'filename': '0a7c757a80f2c5b13fa7a2a47a683593.jpeg', 'prediction': 'Eskimo_dog', 'score': 0.9346 }{'filename': '0a7c757a80f2c5b13fa7a2a47a683593.jpeg', 'prediction': 'Eskimo_dog', 'score': 0.9346 }
+{'filename': 'befad1a2012ccd946459dc3d9a129c6e.jpeg', 'prediction': 'golden_retriever', 'score': 0.5846 }
+{'filename': '0a7c757a80f2c5b13fa7a2a47a683593.jpeg', 'prediction': 'Eskimo_dog', 'score': 0.9346 }
+{'filename': 'befad1a2012ccd946459dc3d9a129c6e.jpeg', 'prediction': 'golden_retriever', 'score': 0.5846 }
+{'filename': 'befad1a2012ccd946459dc3d9a129c6e.jpeg', 'prediction': 'Golden retriever', 'score': 58.46% }
+{'filename': '9ba77e0f88f3656c1ffca5cc6e32b44a.jpeg', 'prediction': 'Miniature pinscher', 'score': 85.08% }
+{'filename': '0a7c757a80f2c5b13fa7a2a47a683593.jpeg', 'prediction': 'Eskimo dog', 'score': 93.46% }

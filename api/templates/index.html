@@ -1,0 +1,43 @@
+<!doctype html>
+<title>ML API</title>
+<h1>Select a file to upload and get the prediction, please</h1>
+<p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</p>
+{% if filename %}
+    <div>
+        <img src="{{ url_for('app_router.display_image', filename=filename) }}">
+    </div>
+    <br>
+    {% if context['prediction'] %}
+        <div class="row">
+            <div class="col-25">
+            <label for="subject">Predicted Class: {{ context['prediction'] }} </label><br>
+            <label for="subject">Score: {{ context['score'] }} </label>
+            </div>
+        </div>
+        <br>
+        <form id="form" method="POST" action="/feedback">
+            <button type="submit">Report incorrect answer</button>
+            <input name="report" style="visibility: hidden;" value="{'filename': '{{ filename }}', 'prediction': '{{ context['prediction'] }}', 'score': {{ context['score'] }} }"/>
+        </form>
+    {% endif %}
+{% endif %}
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+        <p>
+            <input type="file" name="file" autocomplete="off" required>
+        </p>
+    </dl>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+</form>
